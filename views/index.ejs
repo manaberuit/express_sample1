@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sample</title>
+</head>
+
+<body>
+  <h1> <%- title %> </h1>
+  <hr>
+  <%- content %>
+  <hr>
+  <form action="/result" method="POST">
+    <p>好きな食べ物を入力してください</p>
+    <input type="text" name="food"><!--name属性がキーとして設定される-->
+    <p>好きな飲み物を入力してください</p>
+    <input type="text" name="drink"><!--name属性がキーとして設定される-->
+    <p><input type="submit" value="送信"></p>
+  </form>
+</body>
